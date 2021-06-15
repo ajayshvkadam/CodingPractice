@@ -1,0 +1,24 @@
+l = [7,6,-3,-4,-7,8,3,6,7,8]
+l1 = []
+for i in range(len(l)):
+    tem = i
+    temp = l[tem]
+    if temp > 0:
+        for j in range(tem,len(l)):
+            if l[j] > 0:
+                continue
+            else:
+                tem = j-1
+                l1.append(tem)
+                break
+    else:
+        if temp < 0:
+            for j in range(tem,len(l)):
+                if l[j] < 0:
+                    continue
+                else:
+                    tem = j-1
+                    l1.append(tem)
+                    break
+
+print(list(set(l1)))

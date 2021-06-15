@@ -1,0 +1,14 @@
+n = int(input("Enter the number of monkeys : "))
+m = int(input("Enter the number of bananas : "))
+p = int(input("Enter the number of peanuts : "))
+k = int(input("Enter the number of bananas monkey eat : "))
+j = int(input("Enter the number of peanuts monkey eat : "))
+
+while m >=0:
+    m -= k
+    n -= 1
+while p >=0:
+    p -= j
+    n -= 1
+
+print("Monkeys left on the tree : ",n)

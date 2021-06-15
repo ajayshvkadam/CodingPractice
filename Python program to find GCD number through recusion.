@@ -1,0 +1,15 @@
+def GCD(A,B):
+    if A != 0 and B!=0:
+        if A > B:
+            temp = A % B
+            GCD(B,temp)
+        else:
+            temp = B % A
+            GCD(A,temp)
+    else:
+        if A == 0:
+            print(B)
+        else:
+            print(A)
+
+GCD(100,0)

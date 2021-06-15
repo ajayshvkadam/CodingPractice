@@ -1,0 +1,17 @@
+from math import ceil
+path = [800,600,750,900,1400,1200,1100,1500] 
+bstop = ["TH","GA","IC","HA","TE","LU","NI","CA"]   
+start = str(input("Enter pickup point : "))
+end = str(input("Enter droping point : "))
+
+a = bstop.index(start)
+b = bstop.index(end)
+if a>b:
+    f = path[a+1:]
+    g = path[:b+1]
+    f = f + g
+else:
+    f = path[a+1:b+1]
+
+g = ceil((sum(f))*0.005)
+print(g)

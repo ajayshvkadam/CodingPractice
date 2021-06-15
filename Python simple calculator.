@@ -1,0 +1,40 @@
+def Add(x,y):
+    result = x + y
+    return result
+
+def sub(x,y):
+    result = x - y
+    return result
+
+def mul(x,y):
+    result = x * y
+    return result
+
+def div(x,y):
+    result = x / y
+    return result
+
+print("Press 1 for addition.")
+print("Press 2 for substraction.")
+print("Press 3 for multiplication.")
+print("Press 4 for division")
+c = int(input("Enter the your choice : "))
+
+if c<4 and c>0:
+    a = int(input("Enter the first number : "))
+    b = int(input("Enter the second number : "))
+
+    if c == 1:
+        res = Add(a,b)
+        print(res)
+    elif c == 2:
+        res = sub(a,b)
+        print(res)
+    elif c == 3:
+        res = mul(a,b)
+        print(res)
+    elif c == 4:
+        res = div(a,b)
+        print(res)
+else:
+    print("wrong input!")

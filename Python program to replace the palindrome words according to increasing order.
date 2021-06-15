@@ -1,0 +1,18 @@
+s = "Please refer to the madam to know the level"
+l = list(s.split())
+y = l.copy()
+b = []
+for i in l:
+    k = i[::-1]
+    if k == i:
+        b.append(i)
+g = b.copy()
+g.sort()
+
+for j in range(len(b)):
+    for o in range(len(l)):
+        if b[j] == l[o]:
+            y[o] = g[j]
+
+p = ' '.join(y)
+print(p)

@@ -1,0 +1,15 @@
+l = [435,133,113,451,132]
+l1 = [1,4,5,3]
+count1 = 0
+for i in l:
+    i = list(str(i))
+    count = 0
+    for j in range(len(i)):
+        if int(i[j]) in l1:
+            count += 1
+    if count == len(i):
+        count1 += 1
+if count1 == len(l):
+    print(True)
+else:
+    print(False)

@@ -1,10 +1,7 @@
 n = int(input())
 arr = []
 for i in range(n):
-    f = []
-    f.append(input())
-    f.append(float(input()))
-    arr.append(f)
+    arr.append([input(),float(input())])
 h =[]
 for i in arr:
     for j in range(1):

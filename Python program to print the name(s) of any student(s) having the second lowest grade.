@@ -1,0 +1,24 @@
+n = int(input())
+arr = []
+for i in range(n):
+    f = []
+    f.append(input())
+    f.append(float(input()))
+    arr.append(f)
+h =[]
+for i in arr:
+    for j in range(1):
+        h.append(i[1])
+h = list(set(h))
+h.sort()
+temp = h[1]
+arr1 = []
+for i in range(len(arr)):
+    temp1 = arr[i]
+    for j in range(1):
+        if temp == temp1[1]:
+            arr1.append(temp1[0])
+
+arr1.sort()
+for i in arr1:
+    print(i)

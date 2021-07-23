@@ -1,0 +1,23 @@
+def gradeings(grades):
+    h = []
+    for i in grades:
+        if i < 38:
+            h.append(i)
+        else:
+            if i % 5 == 0:
+                h.append(i)
+            else:
+                temp = i
+                count = 0
+                while temp % 5 != 0:
+                    temp += 1
+                    count += 1
+                if count < 3:
+                    h.append(temp)
+                else:
+                    h.append(i)
+    return h
+
+grades = [73,67,38,33]
+result = gradeings(grades)
+print(result)
